@@ -1,8 +1,10 @@
-x = int(input('input the number'))
-for y in range(x+1):
-    for z in range(1, y+1):
-        print(z, end=' ')
-    print()
+x = int(input('Input the number: '))
+def print_number_of_rows():
+    for y in range(x + 1):
+        for z in range(1, y + 1):
+            print(z, end=' ')
+        print()
+print_number_of_rows()
 # #####################################
 num = int(input("Enter number :"))
 def sum_num():
@@ -14,29 +16,36 @@ result = sum_num()
 print("Sum is :", result)
 #########################################
 name = input("Enter your name")
-
-for i in range(len(name)):
-    print(name[:i], end=" ")
-    print()
-for v in range(len(name), 0, -1):
-    print(name[:v], end=" ")
-    print()
+def a():
+    for i in range(len(name)):
+        print(name[:i], end=" ")
+        print()
+    for v in range(len(name), 0, -1):
+        print(name[:v], end=" ")
+        print()
+a()
 
 ####################################
 n = input("input a word to revers")
-print(n[::-1])
-#############################
-o = int(input('Enter range'))
-while o>=1:
-    print(o, end=" ")
-    o +=-1
-print()
-#####################################
+def c():
+    print(n[::-1])
+c()
+############################
+def i():
+    o = int(input('Enter range'))
 
-t = int(input('multiples of 5'))
-while t<=50:
-    print(t, end=" ")
-    t +=5
+    while o>=1:
+        print(o, end=" ")
+        o +=-1
+    print()
+i()
+#####################################
+def k():
+    t = int(input('multiples of 5'))
+    while t<=50:
+        print(t, end=" ")
+        t +=5
+k()
 ######################
 def main():
     Limit_number = int(input("Enter the limit number: "))
